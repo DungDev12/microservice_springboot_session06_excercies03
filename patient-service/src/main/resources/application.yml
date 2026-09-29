@@ -1,0 +1,18 @@
+spring:
+    application:
+        name: patient-service
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+
+    datasource:
+        url: jdbc:postgresql://localhost:5432/microservices_ss06_patient
+        username: postgres
+        password: TuanDung@127
+server:
+    port: 8081
+eureka:
+    client:
+        service-url:
+          defaultZone: http://localhost:8761/eureka/
